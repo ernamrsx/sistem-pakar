@@ -1,0 +1,84 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+/* HALAMAN PROFIL */
+.profile-container {
+    max-width: 850px;
+    margin: auto;
+}
+
+.profile-header {
+    background: white;
+    border: 1px solid var(--line);
+    border-radius: 22px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    margin-bottom: 22px;
+}
+
+.profile-avatar {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    background: var(--purple-light);
+    color: var(--purple);
+    display: grid;
+    place-items: center;
+    font-size: 35px;
+}
+
+.profile-info h2 {
+    margin-bottom: 7px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.profile-info p {
+    color: var(--muted);
+    margin-bottom: 0;
+}
+
+.profile-card {
+    background: white;
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    padding: 25px;
+    margin-bottom: 18px;
+}
+
+.profile-card h3 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    margin-bottom: 20px;
+}
+
+.profile-detail {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 15px 0;
+    border-bottom: 1px solid var(--line);
+    font-size: 14px;
+}
+
+.profile-detail:last-child {
+    border-bottom: none;
+}
+
+.profile-label {
+    color: var(--muted);
+}
+
+.profile-value {
+    font-weight: 600;
+    text-align: right;
+}
